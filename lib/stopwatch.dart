@@ -11,13 +11,11 @@ class Stopwatch extends StatefulWidget {
 class _StopwatchState extends State<Stopwatch> {
   final StopWatchTimer _stopWatchTimer = StopWatchTimer();
   final _isHours = true;
-  final _scrollController = ScrollController();
 
   @override
   void dispose() {
     super.dispose();
     _stopWatchTimer.dispose();
-    _scrollController.dispose();
   }
 
   @override
